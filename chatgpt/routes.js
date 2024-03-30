@@ -1,8 +1,9 @@
 import OpenAI from "openai";
 import dotenv from "dotenv";
+dotenv.config();
 
 // Initialize OpenAI client with your API key
-const openai = new OpenAI({ apiKey : `${process.env.OPENAI_API_KEY}`});
+const openai = new OpenAI({ apiKey : `${process.env.OPEN_AI_KEY}`});
 
 // Function to generate AI chat response
 async function chatGPTResponse(message) {
