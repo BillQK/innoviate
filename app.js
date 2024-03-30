@@ -7,7 +7,8 @@ app.use(express.json());
 app.use(cors({
     origin: '*',
     methods: '*',
-    headers: '*'
+    headers: '*',
+    credentials : true
   })); 
 chatGPTRoutes(app);
 
